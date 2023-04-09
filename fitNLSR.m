@@ -26,6 +26,5 @@ function [beta, betaCI, rSquared] = fitNLSR(betaGuess, x, yMeas, calcY,...
     beta = mdl.Coefficients.Estimate;
     betaCI = coefCI(mdl);
     rSquared = mdl.Rsquared.Ordinary; % .Adjusted also available
-    
 end % of fitNLSR
 
